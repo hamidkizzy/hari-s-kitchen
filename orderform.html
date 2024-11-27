@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        input, select, textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: #f1f1f1;
+        }
+        .btn-submit {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 1.1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-submit:hover {
+            background-color: #218838;
+        } nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+        p{
+            align-items: center;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }.container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #ff5722;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .contact-info {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .contact-info a {
+            display: inline-block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: white;
+            background-color: #25d366;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .contact-info a:hover {
+            background-color: #20b855;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about2.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="orderform.html">ORDER</a></li>
+        </ul>
+    </nav>
+
+<div class="container">
+    <h1>Food Order Form</h1>
+    <form action="#" method="POST">
+        
+        <!-- Date and Time of Order -->
+        <label for="order-date">Order Date:</label>
+        <input type="date" id="order-date" name="order_date" required>
+
+        <label for="order-time">Order Time:</label>
+        <input type="time" id="order-time" name="order_time" required>
+
+        <!-- Customer Info -->
+        <label for="customer-name">Customer Name:</label>
+        <input type="text" id="customer-name" name="customer_name" placeholder="Enter your name" required>
+
+        <label for="customer-phone">Phone Number:</label>
+        <input type="tel" id="customer-phone" name="customer_phone" placeholder="Enter your phone number" required>
+
+        <!-- Food Order Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Food Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- You can add more rows as needed -->
+                <tr>
+                    <td><input type="text" name="food_item_1" placeholder="e.g., Jollof Rice" required></td>
+                    <td><input type="number" name="quantity_1" placeholder="1" required min="1"></td>
+                    <td><input type="number" name="price_1" placeholder="Price" required min="0" step="0.01"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="food_item_2" placeholder="e.g., Fried Rice" required></td>
+                    <td><input type="number" name="quantity_2" placeholder="1" required min="1"></td>
+                    <td><input type="number" name="price_2" placeholder="Price" required min="0" step="0.01"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="food_item_3" placeholder="e.g., Grilled Chicken" required></td>
+                    <td><input type="number" name="quantity_3" placeholder="1" required min="1"></td>
+                    <td><input type="number" name="price_3" placeholder="Price" required min="0" step="0.01"></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+
+        <!-- Special Instructions -->
+        <label for="special-instructions">Special Instructions (Optional):</label>
+        <textarea id="special-instructions" name="special_instructions" rows="4" placeholder="Any special requests or instructions?"></textarea>
+
+        <div class="container">
+            <div class="contact-info">
+                <a href="https://wa.me/233538083300" target="_blank">SUBMIT ORDER</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

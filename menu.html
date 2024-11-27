@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - HARI'S KITCHEN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ff5722;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .menu-container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #ff5722;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .menu-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .menu-item-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .menu-item-info h2 {
+            margin: 0;
+            color: #ff5722;
+        }
+        .menu-item-info p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .price {
+            font-size: 18px;
+            color: #ff5722;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+            background-color: #0b0a0a;
+        } 
+         nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+        p{
+            align-items: center;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about2.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="raechplatforms.html">Contact Us</a></li>
+            <li><a href="orderform.html">ORDER</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>HARI'S KITCHEN - Menu</h1>
+    </header>
+    <div class="menu-container">
+        <h1>Our Delicious Menu</h1>
+
+        <!-- Menu Item 1 -->
+        <div class="menu-item">
+            <img src="newgob3.jfif" alt="Dish 1">
+            <div class="menu-item-info">
+                <h2>Plantain and Beans (Gob3) </h2>
+                <span class="price">$15.00</span><br>
+            </div>
+        </div>
+
+        <!-- Menu Item 2 -->
+        <div class="menu-item">
+            <img src="newoilrice.jfif" alt="Dish 2">
+            <div class="menu-item-info">
+                <h2>Oil Rice (Angwamu)</h2>
+                <span class="price">$12.00</span><br>
+                <a href="oilricerecipe.html">Learn recipe</a>
+            </div>
+        </div>
+
+        <!-- Menu Item 3 -->
+        <div class="menu-item">
+            <img src="NEWJELLOF.jfif" alt="Dish 3">
+            <div class="menu-item-info">
+                <h2>Jollof Rice</h2>
+                <span class="price">$20.00</span><br>
+                <a href="jollofsrecipe.html">Learn recipe</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="newfriedrice.jfif" alt="Dish 4">
+            <div class="menu-item-info">
+                <h2>Fried Rice</h2>
+                <span class="price">$30.00</span><br>
+                <a href="friedricerecipe.html">Learn recipe</a>
+            </div>
+        </div>
+
+        <!-- Add more menu items as needed by copying the structure above -->
+
+    </div>
+    <footer>
+        &copy; 2024 HARI'S KITCHEN. All Rights Reserved.
+    </footer>
+</body>
+</html>
